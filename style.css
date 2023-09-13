@@ -13,7 +13,7 @@ html,body{
 .page1{
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    
     
 }
  nav{
@@ -24,6 +24,34 @@ html,body{
     align-items: center;
     justify-content: space-between;
     padding: 0 2vmax;
+    position: fixed;
+    z-index: 20;
+
+ }
+ .menu{
+    width: 100%;
+    height: 100%;
+    z-index: 60;
+    position: absolute;
+    top: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E1317;
+
+ }
+ .menu ul li{
+    list-style-type: none;
+    text-align: center;
+    line-height: 5vmax;
+ }
+ .menu ul li a {
+    list-style-type: none;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    font-size: 3vmax;
 
  }
  nav h1{
@@ -32,6 +60,10 @@ html,body{
 
     
  }
+ nav   h4 i{
+    display: none;
+ }
+
  nav h1 i{
     color: #C19976;
     
@@ -40,13 +72,19 @@ html,body{
     display: flex;
     align-items: center;
     text-decoration: none;
+    justify-content:space-between ;
     list-style-type: none;
     gap: 20px;
     color: #fff;
 
  }
+ nav ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+ }
  nav button{
-    
+        
         padding: 1vmax 1.5vmax;
         color: #fff;
         background-color: #C19976;
@@ -55,36 +93,37 @@ html,body{
  }
  .main{
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-color:#161B21;
-
+  
  }
- .main h2{
-    position: absolute;
-    top: 30%;
-    left: -3%;
-    opacity: .5;
-    font-weight: 100;
-    font-size: 15.7vmax;
-    overflow: hidden;
- }
- .main span{
+ .m1{
     width: 100%;
     height: 100%;
     display: flex;
+    margin-top: -30%;
  }
+ .main h2{
+
+    padding-top: 15%;
+    opacity: .5;
+    font-weight: 100;
+    font-size: 15.7vmax;
+    z-index: 0;
+    
+ }
+ 
  .left{
     width: 50%;
     height: 100%;
-    background-color:transparent;
-   
-    z-index: 10;
+    z-index: 1;
+    margin-top: -5%;
 
  }
  .left img{
     width: 40%;
     rotate: -15deg;
-    padding: 5vmax 0 0 8vmax;
+    padding: 8vmax 0 0;
     
  }
  .left h1{
@@ -113,15 +152,16 @@ html,body{
  .right{
     width: 50%;
     height: 100%;
-    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 1;
+    margin-top: -5%;
+    
  }
  .right img{
-    
-    height: 100%;
+    height: 70%;
+
     
 
  }
@@ -546,6 +586,479 @@ html,body{
     padding: 1vmax;
     border-radius: 50%;
     gap: 2vmax;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 600px)  {
+
+
+
+
+    html,body{
+    }
+    .page1{
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+     nav{
+        width: 85%;
+        height: 8%;
+        z-index: 30;
+        position: fixed;
+    
+     }
+     .menu{
+        width: 87%;
+        height: 100%;
+        z-index: 20;
+        position: absolute;
+        top: 0%;
+        position: fixed;
+        transition: all ease .5s;
+    
+    
+     }
+     .menu ul li{
+        list-style-type: none;
+        line-height: 5vmax;
+        
+     }
+     .menu ul li a {
+        list-style-type: none;
+        font-weight: 900;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Righteous', cursive;
+        font-size: 3vmax;
+        
+    
+     }
+    
+     nav  h4 i{
+        display: initial;
+        color: #C19976;
+        font-size: 3vmax;
+     }
+    
+   
+     nav ul {
+        display: none;
+     
+    
+     }
+    
+     nav button{
+        display: none;  
+     }
+
+     .main{
+        width: 100%;
+        height: 100%;
+        background-color:#161B21;
+      
+     }
+     .m1{
+        width: 100%;
+        height: 100%;
+        display: inline;
+        margin-top: -30%;
+     }
+     .main h2{
+    
+        padding-top: 50%;
+        font-size: 8.5vmax;
+        z-index: 0;
+        
+     }
+     
+     .left{
+        width: 100%;
+        height: 50%;
+        z-index: 1;
+        margin-top: -50%;
+        
+    
+     }
+   
+     .left button{
+        margin-left: 35%;
+     }
+    
+     .left p {
+        padding-left: 40%;
+        margin-top: 1%;
+    
+     }
+     .right{
+        width: 100%;
+        height: 50%;
+     
+        
+     }
+     .right img{
+        height: 100%;
+        margin-top: -20%;
+    
+        
+    
+     }
+     
+    
+     .page2{
+        width: 100%;
+        height: 130%;
+        background-color: #0E1317;
+    
+     }
+     
+     .ptop{
+        width: 100%;
+        height: 75%;
+         display: inline;
+    
+     }
+     .ptop span{
+    
+        display: inline;
+        margin-top: 2vmax;
+        font-size: 1.8vmax;
+        
+        
+    
+     } 
+     .ptop img:nth-child(1){
+        width: 40%;
+        height: 25%;
+        margin-left: 10%;
+       margin-top: 2vmax;
+     }
+     .ptop img:nth-child(3){
+        width: 40%;
+        height: 25%;
+        margin-left: 30%;
+       margin-top: 2vmax;
+     }
+     .ptop span img{
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 8%;
+        
+     }
+     .pbot{
+        width: 100%;
+        height: 25%;
+     }
+     .pbot ul {
+         margin-top: 5vmax;
+        display:flex;
+        
+     }
+     .pbot ul li img{
+        width: 100%;
+     }
+    
+     .page3{
+        width: 100%;
+        height: 90%;
+     }
+     .p31{
+        width: 100%;
+        height: 30%;
+        position: relative;
+    
+     }
+     .p31 h1{
+        
+        font-size: 10vmax;
+        
+    
+    
+     }
+     .p31 span  {
+        top: 30%;
+        left: 6%;
+     } 
+     
+     .p32{
+        width: 100%;
+        height: 30%;
+        
+     }
+     
+     
+     .p321{
+       
+        display: inline-block;
+            margin-left: -20%;
+     }
+     .p321 img{
+        width: 80%;
+     }
+    
+     
+     .p33{
+    
+        height:40%;
+       padding: .5vmax;
+
+     }
+     .p331{
+        margin-top: 10%;
+     }
+     .p332{
+        margin-top: 10%;
+     }
+     .p333{
+        margin-top: 10%;
+     }
+     
+     .page4{
+        width: 100%;
+        height: 28%;
+     
+    
+     }
+     .p41{
+        height: 30%;
+        width: 100%;
+        padding-top: 25%;
+        padding-left: 5%;
+        font-size: .5vmax;
+        
+    
+     }
+  
+     .page5{
+        width: 100%;
+        height: 80%;
+      
+    
+     }
+     .p5top{
+        width: 100%;
+        height: 50%;
+        background-color: #12151a;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+     }
+     .p51{
+        
+        font-size: 1.2vmax;
+        padding-left: 1vmax;
+     }
+    
+    
+     .p51 button{
+        padding: 1vmax;
+        font-size: 1vmax;
+    
+     }
+    
+    
+     .p52{
+        width: 30%;
+       font-size: .6vmax;
+       gap: 3.5vmax;
+       
+     }
+    
+     .box img{
+        height: 50%;
+        
+        
+     }
+    
+     .p5bot{
+        width: 100%;
+        height: 35%;
+    
+     }
+     
+     .p5bot button {
+     margin-top: -2%;
+    font-size: 1vmax;
+     }
+     .p5bot img {
+        width: 20%;
+     
+
+     }
+     .p5bot h1{
+        font-size: 2.5vmax;
+       
+     }
+    
+   
+    
+     .p5bbot img{
+       margin-left: 8vmax;
+      
+     }
+    
+     .page6{
+        width: 100%;
+        height: 60%;
+        background-color:#12151a;
+     }
+     
+    
+     .p6top{
+        width: 100%;
+        height: 20%;
+        padding-top: 3vmax;
+        font-size: 2vmax;
+     }
+     .p6bot{
+        width: 100%;
+        height: 70%;
+     }
+     .p61{
+        width: 30%;
+        height: 90%;
+        font-size: 1vmax;
+        padding: 1vmax;
+     }
+    
+    
+     .page7{
+        width: 100%;
+        height: 100%;
+        
+     }
+     .p7top{
+        width: 100%;
+        height: 50%;
+        
+        gap: 2vmax;
+     }
+     .p7top span {
+        font-size: 1vmax;
+        width: 100%;
+      
+    
+     }
+     .p7top span input{
+        width: 30%;
+        height: 60%;
+       margin-left: 1vmax;
+        font-size: 1.2vmax;
+     }
+     .p7top  button {
+    
+        padding: 1vmax 2vmax;
+        margin-top:5%;
+     
+       
+    
+     }
+    
+    
+     .p7bot{
+        width: 100%;
+        height: 50%;
+        padding: 0 1vmax;
+    
+     }
+    
+    
+    
+     .p7b1{
+        padding: 1vmax;
+        gap: 1vmax;
+       font-size: 1.2vmax;
+       align-items: start;
+        width: 25%;
+        height: 100%;
+     }
+     .p7b1 ul li{
+        margin-left: -1vmax;
+        text-align: start;
+     }
+    
+     .p7b2{
+        width: 33%;
+        height: 50%;
+        margin-top: 15%;
+        text-align: center;
+        font-size: 1vmax;
+        
+     }
+     .p7b2 h3 i{
+        margin-top: -5vmax;
+     }
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    
  }
 
 
